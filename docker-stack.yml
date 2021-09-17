@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  homeassistant:
+    image: eclipse-mosquitto:latest
+    ports:
+      - "1883:1883"
+    deploy:
+      replicas: 1
